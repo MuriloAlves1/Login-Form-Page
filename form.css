@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Roboto&family=Tajawal:wght@200&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #FBAB7E;
+    background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
+    display: flex;
+    font-family: 'Noto Sans', sans-serif;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+
+    border: 0;
+}
+
+.container {
+    background-color: #ffffff;
+    border-radius: 20px;
+    border: 2px solid #ffffff;
+    width: 450px;
+    max-width: 100%;
+    box-shadow: 0px 10px 40px #00000056;
+}
+
+.header {
+    padding: 30px 40px;
+}
+
+.header h2 {
+    font-weight: 600;
+    color: #000000;
+    font-size: 30px;
+}
+
+.form {
+    padding: 0 40px 30px;
+}
+
+.form-control {
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.form-control label {
+    display: inline-block;
+    margin-bottom: 5px;
+    color: rgb(175, 175, 167);
+    
+}
+
+.form-control input {
+    border: 2px solid #3E445B;
+    border-radius: 5px;
+    outline: 0;
+    display: block;
+    font-size: 14px;
+    width: 100%;
+    padding: 15px;
+    
+}
+
+.form-control.success input{
+    border: 3px solid #4ECA64;
+}
+
+.form-control.error input{
+    border: 3px solid #D85A5A;
+}
+
+.form-control.success i .img-success{
+    visibility: visible;
+}
+
+.form-control.error i .img-error{
+    visibility: visible;
+}
+
+.form-control.error small{
+    visibility: visible;
+}
+
+.form-control i {
+    position: absolute;
+    top: 45px;
+    right: 10px;
+    visibility: hidden;
+}
+
+.form-control small {
+    visibility: hidden;
+    position: absolute;
+    margin-top: 5px;
+    font-size: 14px;
+    color: #D85A5A;
+}
+
+.form button {
+    background-color: #eedd90;
+    border-radius: 5px;
+    color: #fff;
+    padding: 15px;
+    font-size: 15px;
+    font-weight: 600;
+    width: 100%;
+    border: 0;
+
+    margin-top: 5px;
+
+    cursor: pointer;
+}
+
+.form button:hover {
+    background-color: #e4cc61;
+    transition: 0.3s;
+}
+
+@media only screen and (max-width:950px){
+    .container{
+        width: 85%;
+    }
+}
