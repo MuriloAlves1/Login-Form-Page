@@ -104,10 +104,14 @@ body{
     }
 }
 @media only screen and (max-width:600px){
+    .left-login{
+        display: none;
+    }
     .main-login{
         flex-direction: column;
     }
-    .left-login > h1{
-        display: none;
+    .right-login{
+        width: 80vw;
     }
+
 }
